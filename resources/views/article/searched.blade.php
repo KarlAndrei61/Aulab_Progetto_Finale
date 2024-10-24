@@ -4,7 +4,7 @@
             <h1 class="mt-4 mb-1 titleindex">Risultati per la ricerca "{{ $query }}"</h1>
         </div>
         <div class="container">
-            <div class="row d-flex">
+            <div class="row">
                 @forelse($articles as $article)
                 <x-card :article="$article" />
                 @empty
