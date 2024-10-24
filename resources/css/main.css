@@ -30,15 +30,6 @@
 
 }
 
-.circle {
-    margin: 7.25px;
-    background-color: #5F96BA;
-    padding: 5.5px;
-    border-radius: 75vh;
-    color: #E7ECEF;
-
-}
-
 .linkstyle {
     color: #E7ECEF;
     font-weight: 500 !important;
@@ -243,24 +234,16 @@
 
 
 .revisorh2 {
-    height: fit-content !important;
-    white-space: nowrap !important;
-
+    
+color: #274c77;
 
 
 }
 
-.cardBag {
-
-    background-color: #5F96BA;
+.circle{
 
     border-radius: 75vh;
     color: #E7ECEF;
-
-    width: 50vw !important;
-
-
-
 
 }
 
