@@ -1,0 +1,164 @@
+.navbarCustom {
+    background-color: #1e5799 !important;
+    transition: 1s;
+}
+
+.scrolledNavbar {
+    display: block;
+    mask-image: linear-gradient(to bottom, white, transparent);
+}
+
+.navbarToggler {
+    color: aliceblue;
+}
+
+.textColor {
+    color: #E7ECEF !important;
+
+}
+
+
+.searchCustom {
+    border: 1px solid #E7ECEF;
+    padding: 2px 20px;
+    border-radius: 18px;
+
+}
+
+.btnCustom {
+    color: #1e5799;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 70px;
+    box-shadow: -35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset 4px -4px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+
+}
+
+.Wrapper {
+    margin-top: 100px !important;
+    background-color: rgb(231, 236, 239);
+}
+
+* {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
+}
+
+
+
+
+.cardCustomLogin {
+    border-radius: 1.25vh;
+    background-color: #5E96BA !important;
+    padding: 40px !important;
+}
+
+.cardCustomRegister {
+    border-radius: 1.25vh;
+    background-color: #5E96BA !important;
+    padding: 40px !important;
+}
+
+.cardCustomJoinUs {
+    background-color: #5E96BA !important;
+    padding: 40px !important;
+    border-radius: 1.25vh;
+    width: 70vw;
+}
+
+.formCustom {
+    width: 90vw;
+}
+
+
+#button {
+    display: inline-block;
+    background-color: #5E96BA;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #bab9b9;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+html::-webkit-scrollbar {
+    width: 7px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #eaeaea;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #5E96BA;
+}
+
+
+
+
+.loginContainer {
+    width: 60vw !important;
+}
+
+.buttonInsert {
+    margin-left: 300px !important;
+}
+
+
+.searchForm {
+    border-color: #1e5799 !important;
+}
+
+
+.cardCustom {
+    width: 40vw !important;
+
+}
+
+
+.contenitore {
+    display: flex !important;
+
+
+}
+
+
+.bag {
+    height: 50vh !important;
+    width: 50vw !important;
+}
+
+
+li :hover {
+    border-bottom: 2px solid rgb(231, 236, 239);
+
+}
