@@ -16,3 +16,9 @@ SU MAILTRAP.COM
 
 1. Creerai un'inbox e copierai la SMTP di essi in formato Laravel 9+ e la metterai al posto della MAIL in default del .env
 
+FAR PARTIRE IL SITO 
+
+1. Su terminale ti basterà scrivere php artisan serve 
+
+2. sul browser copiare il https del server in terminale come http://127.0.0.1:8000
+
