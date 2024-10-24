@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $(".circle").animate({
-        margin: '20vh'
+        margin: '12.5vh'
     }, 1000);
 
     $(".magictrick").fadeIn(875);

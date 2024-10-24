@@ -24,8 +24,9 @@
               </span>
             </div>
             @endif
+            @if(@!Auth::user()->is_revisor)
             <li class="nav-item"><a class="nav-link active textColor ms-2 mt-1  fs-5" href="{{route('article.create')}}">{{__('ui.Create')}}</a></li>
-
+            @endif
             <form action="{{route('logout')}}" method="POST">
               @csrf
               <button type="submit" class="btn btn-nav textColor ms-2 mt-1  fs-5">Logout</button>
