@@ -22,5 +22,16 @@
 
       </div>
     </div>
+    <div class="container noannunci">
+                <div class="row">
+                  @forelse($articles as $article)
+                  <x-card :article="$article" />
+                  @empty
+                  <div>
+                    <p>{{__('ui.noarticle')}}</p>
+                  </div>
+                  @endforelse
+                </div>
+              </div>
   </div>
 </x-layout>

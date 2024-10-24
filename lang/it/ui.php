@@ -29,7 +29,7 @@ return
         'Category' => 'Categorie',
         'moresell' => 'Più annunci fai più vendi',
         'revisionzone' => 'Zona revisione',
-        'noarticle' => 'Non ci sono articoli'
+        'noarticle' => 'Non ci sono annunci'
 
 
 
