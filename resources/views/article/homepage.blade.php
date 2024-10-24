@@ -32,7 +32,7 @@
             </div>
             @endauth
             <div>
-              <div class="container noannunci">
+              <div class="container noannunci1">
                 <div class="row">
                   @forelse($articles as $article)
                   <x-card :article="$article" />

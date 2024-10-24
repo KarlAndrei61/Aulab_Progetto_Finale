@@ -4,7 +4,7 @@ return
     'hello' => 'Hello',
     'allArticles' => 'All the articles',
     'insertArticle' => 'Insert article',
-    'titleHome' => 'Best site to sell second hand products',
+    'titleHome' => 'Best website to sell second hand products',
     'Announces' => 'Announces',
     'Access' => 'Log in',
     'Register' => 'Register',
