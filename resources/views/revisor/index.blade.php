@@ -119,22 +119,16 @@
                 </div>
             </div>
             @else
-            <div class="d-flex justify-content-center">
-                <div class="circle d-flex align-items-center justify-content-center container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4">
-                            <div class="">
-                                <h2 class="text-center mt-5">Nessun articolo al momento</h2>
+                        <div class="col-12">
+                            <div class="circle">
+                                <h2 class="text-center mt-5 fs-3 loremstyle">Nessun articolo</h2>
+
+                                <div class="d-flex justify-content-center mt-5">
+                                    <img width="200" src="https://cdn3d.iconscout.com/3d/premium/thumb/shopping-bag-3d-icon-download-in-png-blend-fbx-gltf-file-formats--ecommerce-shop-user-interface-pack-icons-8988733.png?f=webp" alt="">
+                                </div>
+
                             </div>
-                            <div class="d-flex justify-content-center">
-                                <img width="150" height="" src="https://cdn3d.iconscout.com/3d/premium/thumb/delivery-person-riding-scooter-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--guy-service-vehicle-going-to-package-deliveryman-pack-people-illustrations-4466370.png?f=webp" alt="immagine moto">
-                            </div>
-                            <div class="m-5 d-flex justify-content-center">
-                                <a class="text-center linkstyle" href="{{route('article.homepage')}}">Torna all'homepage</a>
-                            </div>
+
                         </div>
-                    </div>
-                </div>
-            </div>
             @endif
 </x-layout>

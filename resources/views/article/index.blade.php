@@ -9,25 +9,11 @@
       </form>
     </div>
     <div class="container">
-      <div class="row">
-
-        @if($articles != NULL)
-        @foreach ($articles as $article )
-
-        <x-card :article="$article" />
-
-        @endforeach
-
-        @endif
-
-      </div>
-    </div>
-    <div class="container noannunci">
                 <div class="row">
                   @forelse($articles as $article)
                   <x-card :article="$article" />
                   @empty
-                  <div>
+                  <div class="noannunci">
                     <p>{{__('ui.noarticle')}}</p>
                   </div>
                   @endforelse

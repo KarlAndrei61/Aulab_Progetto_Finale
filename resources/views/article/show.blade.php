@@ -1,7 +1,7 @@
     <x-layout>
         <div class="container magictrick">
             <div class="row mt-5">
-                <div class="col-md-12 card mt-4 p-2 cardcustom rounded-5 p-3 mb-3 ">
+                <div class="col-md-12 card mt-4 p-2 cardmostra rounded-5 p-3 mb-3 ">
                     @if($article->images->count() > 0)
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner carosellostyle">
@@ -25,7 +25,7 @@
                     @else
                     <img src="https://picsum.photos/300" alt="Nessuan foto inserita dall'utente">
                     @endif
-                    <div class="card d-flex text-center dettagliocard2">
+                    <div class="flex-column d-flex text-center dettaglicard1">
                         <h1 class="titleindex">{{$article->title}}</h1>
                         <h4 class="titleindex">{{$article->price}}$</h4>
                         <h4 class="loremstyle">Descrizione</h4>

@@ -6,7 +6,7 @@
 
                 </div>
                 <div class="col-12 col-md-6 col-lg-4  d-flex justify-content-center">
-                    <div class="card cardCustomJoinUs mt-5">
+                    <div class="card cardCustomJoinUs">
                         <div class="container">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" fill="currentColor" class="bi bi-rocket-takeoff-fill textColor" viewBox="0 0 16 16">
