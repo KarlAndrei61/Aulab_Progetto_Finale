@@ -13,35 +13,39 @@ use Illuminate\Support\Facades\Auth;
 class RevisorController extends Controller
 {
 
-    public function index(){
+    public function index()
+    {
         $article_to_check = Article::where('is_accepted', null)->first();
 
         return view('revisor.index',  compact('article_to_check'));
     }
-    public function becomeRevisor(){
+    public function becomeRevisor()
+    {
         Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));
-        
+
 
         return redirect()->route('article.homepage')->with('message', 'Complimenti, hai richiesto di diventare revisor');
     }
 
-    public function makeRevisor(User $user){
+    public function makeRevisor(User $user)
+    {
         Artisan::call('app:make-user-revisor', ['email' => $user->email]);
         return redirect()->back();
     }
 
-    public function accept(Article $article){
+    public function accept(Article $article)
+    {
         $article->setAccepted(true);
         return redirect()
-        ->back()
-        ->with('message', "Hai accettao l'articolo $article->title");
+            ->back()
+            ->with('message', "Hai accettao l'articolo $article->title");
     }
 
-    public function reject(Article $article){
+    public function reject(Article $article)
+    {
         $article->setAccepted(false);
         return redirect()
-        ->back()
-        ->with('message', "Hai rifiutato l'articolo $article->title");
+            ->back()
+            ->with('message', "Hai rifiutato l'articolo $article->title");
     }
-
 }

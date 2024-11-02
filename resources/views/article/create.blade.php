@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="magictrick">
+    <div class="">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">

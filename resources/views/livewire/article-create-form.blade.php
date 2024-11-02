@@ -75,10 +75,13 @@
               </div>
               <div class="row">
                 @foreach($images as $key => $image)
-                <div class="col-4 d-flex flex-column">
-                  <div class="img-preview m-3" style="background-image: url({{ $image->temporaryUrl() }});">
+                <div class="col-4 d-flex flex-column my-auto">
+                  <div class="d-flex justify-content-center">
+                  <div class="img-preview m-3" style="background-image: url({{ $image->temporaryUrl() }});"></div>
                   </div>
+                  <div class="d-flex justify-content-center">
                   <button type="button" class="bottonecustom" wire:click="removeImage({{ $key }})">Rimuovi</button>
+                  </div>
                 </div>
                 @endforeach
               </div>

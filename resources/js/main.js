@@ -1,10 +1,8 @@
 $(document).ready(function () {
 
     $(".circle").animate({
-        margin: '12.5vh'
-    }, 1000);
 
-    $(".magictrick").fadeIn(875);
+    }, 1000);
 
     $(".cardarticle").mouseenter(function () {
 

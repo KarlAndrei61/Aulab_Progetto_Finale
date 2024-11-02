@@ -164,3 +164,10 @@ li :hover {
     border-bottom: 2px solid rgb(231, 236, 239);
 
 }
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+  }
+  

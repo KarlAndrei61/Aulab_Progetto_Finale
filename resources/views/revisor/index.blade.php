@@ -1,8 +1,7 @@
 <x-layout>
-    <div class="magictrick">
+    <div class="">
         <div class="revisorbackground d-flex justify-content-center mt-5">
             <h1 class="revisortitle m-5">
-                <i class="fa-solid fa-check"></i>
                 Revisor dashboard
             </h1>
 
@@ -19,54 +18,6 @@
                                 <div class="row g-0">
                                     <div class="col-12 col-ml-4 col-lg-4">
                                         <img src="{{ $image->getUrl(300, 300)}}" class="img-fluid rounded-5 bordercolor" alt="Immagine {{$key +1}} dell'articolo {{$article_to_check->title}}">
-                                    </div>
-                                    <div class="col-12 col-ml-4 col-lg-4 ps-3 d-flex align-items-center">
-                                        <div class="card-body">
-                                            <h5 class="text-center titleindex">Labels</h5>
-                                            <div class="loremstyle">
-                                                @if ($image->labels)
-                                                @foreach ($image->labels as $label)
-                                                #{{ $label }},
-                                                @endforeach
-                                                @else
-                                                <p class="fst-italic text-center">No Labels</p>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="justify-content-center d-flex align-items-center loremstyle col-12 col-ml-4 col-lg-4">
-                                        <div class="container justify-content-center">
-                                            <div class="row justify-content-center">
-                                                <div class="col-2">
-                                                    <div class="text-center mx-auto {{$image->adult}}"></div>
-                                                </div>
-                                                <div class="col-10">adult</div>
-                                            </div>
-                                            <div class="row justify-content-center">
-                                                <div class="col-2">
-                                                    <div class="text-center mx-auto {{$image->violence}}"></div>
-                                                </div>
-                                                <div class="col-10">violence</div>
-                                            </div>
-                                            <div class="row justify-content-center">
-                                                <div class="col-2">
-                                                    <div class="text-center mx-auto {{$image->spoof}}"></div>
-                                                </div>
-                                                <div class="col-10">spoof</div>
-                                            </div>
-                                            <div class="row justify-content-center">
-                                                <div class="col-2">
-                                                    <div class="text-center mx-auto {{$image->racy}}"></div>
-                                                </div>
-                                                <div class="col-10">racy</div>
-                                            </div>
-                                            <div class="row justify-content-center">
-                                                <div class="col-2">
-                                                    <div class="text-center mx-auto {{$image->medical}}"></div>
-                                                </div>
-                                                <div class="col-10">medical</div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -111,24 +62,26 @@
                                 @method('PATCH')
                                 <button class="bottonecustom">Accetta</button>
                             </form>
+                            <div class="m-2 d-flex justify-content-center">
                             @if (session()->has('message'))
                             {{ session('message')}}
                             @endif
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             @else
-                        <div class="col-12">
-                            <div class="circle">
-                                <h2 class="text-center mt-5 fs-3 loremstyle">Nessun articolo</h2>
+            <div class="col-12">
+                <div class="circle">
+                    <h2 class="text-center fs-3 loremstyle">Nessun articolo</h2>
 
-                                <div class="d-flex justify-content-center mt-5">
-                                    <img width="200" src="https://cdn3d.iconscout.com/3d/premium/thumb/shopping-bag-3d-icon-download-in-png-blend-fbx-gltf-file-formats--ecommerce-shop-user-interface-pack-icons-8988733.png?f=webp" alt="">
-                                </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <img width="200" src="https://cdn3d.iconscout.com/3d/premium/thumb/shopping-bag-3d-icon-download-in-png-blend-fbx-gltf-file-formats--ecommerce-shop-user-interface-pack-icons-8988733.png?f=webp" alt="">
+                    </div>
 
-                            </div>
+                </div>
 
-                        </div>
+            </div>
             @endif
 </x-layout>

@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Livewire;
-
-use App\Jobs\RemoveFaces;
 use App\Models\User;
 use App\Models\Article;
 use Livewire\Component;
@@ -14,10 +12,6 @@ use Livewire\Attributes\Validate;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
-use App\Jobs\GoogleVisionSafeSearch;
-use App\Jobs\GoogleVisionLabelImage;
-
-
 
 
 class ArticleCreateForm extends Component
@@ -29,21 +23,20 @@ class ArticleCreateForm extends Component
 
     #[Validate('required|min:5')]
     public $title;
-
+    
     #[Validate('required|numeric')]
     public $price;
-
+    
     #[Validate('required|min:10')]
     public $description;
-
+    
     #[Validate('required')]
     public $category;
     public $categories;
-
+    
     public $article;
 
-    public function storeArticle()
-    {
+    public function storeArticle(){
         $this->validate();
         $this->article = Article::create([
             'title' => $this->title,
@@ -53,13 +46,12 @@ class ArticleCreateForm extends Component
             'user_id' => Auth::id(),
         ]);
 
-        if (count($this->images) > 0) {
-            foreach ($this->images as $image) {
+        if (count($this->images) > 0){
+            foreach($this->images as $image){
                 $newFileName = "articles/{$this->article->id}";
                 $newImage = $this->article->images()->create(['path' => $image->store($newFileName, 'public')]);
                 dispatch(new ResizeImage($newImage->path, 300, 300));
             }
-
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 
@@ -78,10 +70,10 @@ class ArticleCreateForm extends Component
     public function updatedTemporaryImages()
     {
         if ($this->validate([
-            'temporary_images.*' => 'image|max:1024',
+            'temporary_images.*' => 'image|max:1024' , 
             'temporary_images' => 'max:6'
-        ])) {
-            foreach ($this->temporary_images as $image) {
+        ])){
+            foreach($this->temporary_images as $image){
                 $this->images[] =  $image;
             }
         }
@@ -89,7 +81,7 @@ class ArticleCreateForm extends Component
 
     public function removeImage($key)
     {
-        if (in_array($key, array_keys($this->images))) {
+        if (in_array($key, array_keys($this->images))){
             unset($this->images[$key]);
         }
     }

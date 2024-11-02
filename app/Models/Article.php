@@ -17,36 +17,32 @@ class Article extends Model
     use HasFactory;
     protected $fillable = ['category_id', 'title', 'price', 'description', 'user_id'];
 
-    public function toSearchableArray()
-    {
-        return [
-            'id' => $this->id,
-            'title' => $this->title,
-            'description' => $this->description,
-            'category' => $this->category
+    public function toSearchableArray(){
+        return[
+            'id' =>$this->id,
+            'title' =>$this->title,
+            'description' =>$this->description,
+            'category' =>$this->category
         ];
     }
 
-    public function user(): BelongsTo
-    {
+    public function user(): BelongsTo{
         return $this->belongsTo(User::class);
     }
 
-    public function category(): BelongsTo
-    {
+    public function category(): BelongsTo{
         return $this->belongsTo(Category::class);
     }
 
-    public function setAccepted($value)
-    {
+    public function setAccepted($value){
 
         $this->is_accepted = $value;
         $this->save();
         return true;
+
     }
 
-    public static function toBeRevisedCount()
-    {
+    public static function toBeRevisedCount(){
         return Article::where('is_accepted', null)->count();
     }
 
@@ -54,4 +50,5 @@ class Article extends Model
     {
         return $this->hasMany(Image::class);
     }
-}
+
+}   

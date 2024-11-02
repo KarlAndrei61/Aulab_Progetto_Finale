@@ -5,7 +5,7 @@ return
         'hello' => 'Ciao',
         'allArticles' => 'Tutti gli articoli',
         'insertArticle' => 'Inserisci annuncio',
-        'titleHome' => 'Miglior sito per vendere all usato',
+        'titleHome' => "Miglior sito per vendere all'usato",
         'Announces' => 'Annunci',
         'Access' => 'Accedi',
         'Register' => 'Registrati',

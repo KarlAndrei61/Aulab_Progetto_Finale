@@ -97,10 +97,6 @@
     font-weight: 750 !important;
 }
 
-.magictrick {
-    display: none;
-}
-
 .containerstyle {
     margin: 50vh;
 }
@@ -124,15 +120,12 @@
 }
 
 .dettagliocard {
-    background-color: #5F96BA;
-    border-radius: 5vh;
+margin-top: 20vh;
+margin-bottom: 20vh;
+background-color: #E7ECEF;
 }
 
-.dettagliocard1{
-    background-color: #E7ECEF;
-    border-radius: 5vh;
-    border: none;
-}
+
 
 .stilealert {
     width: 7.5vh;
@@ -245,6 +238,7 @@ color: #274c77;
 
     border-radius: 75vh;
     color: #E7ECEF;
+    margin: 12.5vh;
 
 }
 

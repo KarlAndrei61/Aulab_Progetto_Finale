@@ -20,7 +20,9 @@
                 <a class="nav-link textColor ms-2 mt-1  fs-5" href="{{route('revisor.index')}}">{{__('ui.revisionzone')}}</a>
               </li>
               <span class="revisioncount">
+                @if(App\Models\Article::toBeRevisedCount() !== 0)
                 {{ App\Models\Article::toBeRevisedCount()}}
+                @endif
               </span>
             </div>
             @endif
