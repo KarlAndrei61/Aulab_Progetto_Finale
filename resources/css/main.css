@@ -1,6 +1,5 @@
 .revisortitle {
     color: #274c77;
-    margin-top: 5vh;
 }
 
 .revisorbackground {
@@ -109,19 +108,10 @@
 }
 
 .bottonecarosello {
-    background-color: #274c77;
-    margin-bottom: 10px;
-    border-radius: 5vh;
-    height: 15vh;
-    width: 15vh;
-    margin-top: 22.5vh;
-    margin-left: 20vh;
-    margin-right: 20vh;
+color: #274c77;
 }
 
 .dettagliocard {
-margin-top: 20vh;
-margin-bottom: 20vh;
 background-color: #E7ECEF;
 }
 

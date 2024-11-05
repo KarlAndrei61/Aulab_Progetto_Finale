@@ -5,7 +5,7 @@ return
     'allArticles' => 'All the articles',
     'insertArticle' => 'Insert article',
     'titleHome' => 'Best website to sell second hand products',
-    'Announces' => 'Announces',
+    'Announces' => 'Articles',
     'Access' => 'Log in',
     'Register' => 'Register',
     'Create' => 'Create',

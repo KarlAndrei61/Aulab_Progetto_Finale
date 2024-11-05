@@ -1,13 +1,13 @@
     <x-layout>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-12 card p-2 dettagliocard rounded-5">
+        <div class="container borderino">
+        <div class="row">
+                <div class="col-6">
                     @if($article->images->count() > 0)
                     <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner carosellostyle">
+                        <div class="carousel-inner">
                             @foreach ($article->images as $key => $image)
-                            <div class="carousel-item @if ($loop->first) active @endif  ">
-                                <img src="{{ $image->getUrl(300, 300)}}" class="d-block margine rounded-5" alt="foto momentaneamente non disponibile">
+                            <div class="carousel-item @if ($loop->first) active @endif ">
+                                <img src="{{ $image->getUrl(300, 300)}}" class="d-block w-100" alt="immagine {{ $key + 1 }} dell'articolo {{$article->title}}">
                             </div>
                             @endforeach
                         </div>
@@ -25,19 +25,15 @@
                     @else
                     <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
                     @endif
-                    <div class="flex-column d-flex text-center dettaglicard1">
+                    </div>
+                    <div class=" text-center dettaglicard1 col-6 d-flex justify-content-center align-items-center">
+                        <div>
                         <h1 class="titleindex">{{$article->title}}</h1>
                         <h4 class="titleindex">{{$article->price}}$</h4>
                         <h4 class="loremstyle">Descrizione</h4>
                         <p class="fs-5">{{$article->description}}</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
+                    </div>
+                    </div>
     </x-layout>

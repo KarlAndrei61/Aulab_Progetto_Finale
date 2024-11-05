@@ -8,9 +8,11 @@ SU TERMINALE
 
 1. Lanciare "composer install"
 
-2. Lanciare i seguenti "npm install i bootstrap" , "npm install bootstrap-icon" ed "npm run dev"
+2. Lanciare i seguenti "npm install i bootstrap" e "npm run dev"
 
 3. Lanciare "php artisan queue:work"
+
+4. Php artisan storage:link
 
 SU MAILTRAP.COM
 
@@ -21,4 +23,5 @@ FAR PARTIRE IL SITO
 1. Su terminale ti basterà scrivere php artisan serve 
 
 2. sul browser copiare il https del server in terminale come http://127.0.0.1:8000
+
 
