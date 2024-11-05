@@ -7,7 +7,7 @@
     @if($article_to_check)
     <div class="container borderino">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 d-flex justify-content-center align-items-center">
                 @if($article_to_check->images->count() > 0)
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
@@ -29,6 +29,9 @@
                     @endif
                 </div>
                 @else
+                <div class="d-flex align-items-center justify-content-center">
+                <p class="fs-2">Nessuna foto disponibile</p>
+                </div>
                 @for($i = 0; $i < 6; $i++)
 
 
@@ -39,6 +42,9 @@
                         <div>
                         <div class="d-flex justify-content-center mt-5 ">
                             <h1>{{ $article_to_check->title }}</h1>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <h3>Categoria: {{ $article_to_check->category->name }}</h3>
                         </div>
                         <div class="d-flex justify-content-center">
                             <h3>Autore: {{ $article_to_check->user->name }}</h3>

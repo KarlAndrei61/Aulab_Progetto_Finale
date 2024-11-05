@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Livewire;
+
+use App\Jobs\RemoveFaces;
 use App\Models\User;
 use App\Models\Article;
 use Livewire\Component;
@@ -12,6 +14,8 @@ use Livewire\Attributes\Validate;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
+
+
 
 
 class ArticleCreateForm extends Component
@@ -52,6 +56,12 @@ class ArticleCreateForm extends Component
                 $newImage = $this->article->images()->create(['path' => $image->store($newFileName, 'public')]);
                 dispatch(new ResizeImage($newImage->path, 300, 300));
             }
+
+        RemoveFaces::withChain([
+            new ResizeImage($newImage->path, 300, 300)
+        ])->dispatch($newImage->id);
+
+
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 

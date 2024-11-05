@@ -11,8 +11,9 @@
 
             <ul class="nav col-md-4 justify-content-end">
                 <li class="nav-item"><a href="{{route('article.homepage')}}" class="nav-link px-2 text-body-secondary">Home</a></li>
+                @if(@!Auth::user()->is_revisor)
                 <li class="nav-item"><a href="{{route('article.lavora-con-noi')}}" class="nav-link px-2 text-body-secondary">{{__('ui.joinUs')}}</a></li>
-
+                @endif
             </ul>
         </footer>
     </div>

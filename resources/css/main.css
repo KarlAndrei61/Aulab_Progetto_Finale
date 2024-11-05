@@ -117,10 +117,6 @@ background-color: #E7ECEF;
 
 
 
-.stilealert {
-    width: 7.5vh;
-}
-
 .img-preview {
     background-position: center;
     background-repeat: no-repeat;
@@ -262,4 +258,15 @@ color: #274c77;
 .noannunci1{
     margin-top: 12.5vh;
     margin-bottom: 12.5vh;
+}
+
+.opacityeffect{
+
+}
+
+.slideffect{
+}
+
+.lasgros{
+    color: #274c77;
 }
