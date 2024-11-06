@@ -22,7 +22,7 @@
           <img class="opacityeffect" src="https://cdn3d.iconscout.com/3d/premium/thumb/e-commerce-website-3d-icon-download-in-png-blend-fbx-gltf-file-formats--store-site-shopping-online-shop-ecommerce-pack-icons-8102503.png" width="200" alt="">
           </div>
           <div class="col-lg-10 mx-auto">
-            <p class="lead loremstyle">La differenza la fai tu!</p>
+            <p class="lead loremstyle"></p>
             <h1 class="display-5 fw-bold text-body-emphasis titleindex">{{__('ui.titleHome')}}</h1>
             @if(@!Auth::user()->is_revisor)
             <div>

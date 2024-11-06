@@ -1,7 +1,7 @@
 <x-layout>
   <div class=" text-center">
     <div class="d-flex justify-content-center">
-      <h2 class="m-4 titleindex fs-1 ">Annunci</h2>
+      <h2 class="m-4 titleindex fs-1 ">{{__('ui.annunci')}}</h2>
     </div>
     @if(@!Auth::user()->is_revisor)
     <div class="d-flex justify-content-center">
@@ -17,7 +17,7 @@
         @empty
         <div class="col-12">
                 <div class="circle">
-                    <h2 class="text-center fs-3 loremstyle">Nessun articolo</h2>
+                    <h2 class="text-center fs-3 loremstyle">{{__('ui.noarticle')}}</h2>
 
                     <div class="d-flex justify-content-center mt-5">
                         <img width="200" src="https://cdn3d.iconscout.com/3d/premium/thumb/shopping-bag-3d-icon-download-in-png-blend-fbx-gltf-file-formats--ecommerce-shop-user-interface-pack-icons-8988733.png?f=webp" alt="">

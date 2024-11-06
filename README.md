@@ -1,27 +1,37 @@
-PASSAGGI PER FAR FUNZIONARE IL SITO
 
-1. Duplicare il .env.example  e chiamarlo .env 
+Requisiti 
 
-2. Configurare il database mettendo il nome del databse su DB_DATABASE" e metterndp i seguenti DB_USERNAME e DB_PASSWORD del database
+- Laravel
 
-SU TERMINALE
+- PHP
 
-1. Lanciare "composer install"
+- Database MySQL
 
-2. Lanciare i seguenti "npm install i bootstrap" e "npm run dev"
+- Imagick
 
-3. Lanciare "php artisan queue:work"
+Passaggi
 
-4. Php artisan storage:link
+1.Dupplica il .env
 
-SU MAILTRAP.COM
+2.Composer install
 
-1. Creerai un'inbox e copierai la SMTP di essi in formato Laravel 9+ e la metterai al posto della MAIL in default del .env
+3.Collega il nome del database in .env
 
-FAR PARTIRE IL SITO 
+4.php artisan migrate
 
-1. Su terminale ti basterà scrivere php artisan serve 
+5.php artisan key:generate
 
-2. sul browser copiare il https del server in terminale come http://127.0.0.1:8000
+6.php artisan db:seed
+
+7.npm install
+
+8. npm run dev
+
+9.php artisan storage:link
+
+10.php artisan queue:work
+
+11.Mettere il mailtrap copiato con il tasto copy e metterlo nel .env
 
 
+12.php artisan serve, prendere l'http uscito e metterlo nel browser

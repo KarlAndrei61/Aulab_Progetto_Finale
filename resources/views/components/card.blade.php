@@ -1,4 +1,4 @@
-<div class="col-6 col-md-4">
+<div class="col-12 col-md-4">
     <a class="nolink" href="{{route('article.show', $article)}}">
         <div class="card cardcustom rounded-4 p-3 mb-3">
             <img class=" " src="{{$article->images->isNotEmpty() ? $article->images->first()->getUrl(300, 300) : 'https://picsum.photos/200'}}" alt="Immagine dell'articolo {{$article->title}}" class="card-img-top">

@@ -28,5 +28,22 @@ return
         'Category' => 'Categories',
         'moresell' => 'Plus vous creez de produits, plus vous vendez',
         'revisionzone' => 'Zone de révision',
-        'noarticle' => "il n'y a pas d'articles"
+        'noarticle' => "il n'y a pas d'articles",
+        'makediff' => 'Faites une différence!',
+        'esci' => 'Déconnecté',
+        'annunci' => 'Articles',
+        'cerca' => 'Recherche',
+        'Italiano' =>'Italien',
+        'Inglese' =>'Anglais',
+        'Francese' =>'Français',
+        'articolidellacat' => 'Articolo della categoria ',
+        'articleresults' => 'Résultats pour',
+        'benvenuto' => 'Bienvenue auditeur',
+        'titolo' => 'Titre',
+        'prezzo' => 'Prix',
+        'descrizione' => 'Description',
+        'categoria' => 'Categorié',
+        'foto' => 'Image',
+        'sceglicat' => 'Choisissez une catégorie'
+
     ];

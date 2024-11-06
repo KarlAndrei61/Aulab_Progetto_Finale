@@ -1,7 +1,7 @@
     <x-layout>
         <div class="container borderino">
         <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     @if($article->images->count() > 0)
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
@@ -26,7 +26,7 @@
                     <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
                     @endif
                     </div>
-                    <div class=" text-center dettaglicard1 col-6 d-flex justify-content-center align-items-center">
+                    <div class=" text-center dettaglicard1 col-12 col-lg-6 d-flex justify-content-center align-items-center">
                         <div>
                         <h1 class="titleindex">{{$article->title}}</h1>
                         <h4 class="titleindex">{{$article->price}}$</h4>

@@ -29,7 +29,18 @@ return
         'Category' => 'Categorie',
         'moresell' => 'Più annunci fai più vendi',
         'revisionzone' => 'Zona revisione',
-        'noarticle' => 'Non ci sono annunci'
+        'noarticle' => 'Non ci sono annunci',
+        'makediff' => 'La differenza la fai tu!',
+        'esci' => 'Esci',
+        'annunci' => 'Annunci',
+        'cerca' => 'Cerca',
+        'Italiano' =>'Italiano',
+        'Francese' =>'Francese',
+        'Inglese' =>'Inglese',
+        'articolidellacat' => 'Articolo della categoria ',
+        'articleresults' => 'Risultati per la ricerca',
+        'benvenuto' => 'Benvenuto revisore',
+        'sceglicat' => 'Scegli una categoria'
 
 
 

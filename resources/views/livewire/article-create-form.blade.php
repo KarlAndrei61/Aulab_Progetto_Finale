@@ -9,10 +9,10 @@
           <div class="row d-flex justify-content-center">
             <div class="col-md-8 mb-3">
               <div class="d-flex justify-content-center">
-                <label class="textColor mb-1" for="title">Titolo</label>
+                <label class="textColor mb-1" for="title">{{__('ui.titolo')}}</label>
               </div>
               <div>
-                <input type="text" class="form-control" id="title" placeholder="Title" wire:model="title">
+                <input type="text" class="form-control" id="title" placeholder="{{__('ui.titolo')}}" wire:model="title">
               </div>
               <div class="textColor">
                 @error('title')
@@ -21,8 +21,8 @@
               </div>
             </div>
             <div class="col-md-8 mb-3">
-              <label class="textColor mb-1" for="price">Prezzo</label>
-              <input type="text" class="form-control" id="price" placeholder="Prezzo" wire:model="price">
+              <label class="textColor mb-1" for="price">{{__('ui.prezzo')}}</label>
+              <input type="text" class="form-control" id="price" placeholder="{{__('ui.prezzo')}}" wire:model="price">
               <div class="textColor">
                 @error('price')
                 {{$message}}
@@ -30,8 +30,8 @@
               </div>
             </div>
             <div class="col-md-8 mb-3">
-              <label class="textColor mb-1" for="description">Descrizione</label>
-              <input type="text" class="form-control" id="description" placeholder="Description" wire:model="description">
+              <label class="textColor mb-1" for="description">{{__('ui.descrizione')}}</label>
+              <input type="text" class="form-control" id="description" placeholder="{{__('ui.descrizione')}}" wire:model="description">
               <div class="textColor">
                 @error('description')
                 {{$message}}
@@ -39,9 +39,9 @@
               </div>
             </div>
             <div class="col-md-8 mb-3">
-              <label class="textColor mb-1" for="category">Categoria</label>
+              <label class="textColor mb-1" for="category">{{__('ui.categoria')}}</label>
               <select id="category" wire:model="category" class="form-control">
-                <option value="">Scegli la categoria</option>
+                <option value="">{{__('ui.sceglicat')}}</option>
                 @foreach ($categories as $category)
                 <option value="{{$category->id}}"> {{__("ui.$category->name")}}</option>
                 @endforeach
@@ -55,7 +55,7 @@
               </div>
             </div>
             <div class="gestioneimmagine col-md-8 mb-3 ">
-              <label class="textColor mb-1" for="file">Foto</label>
+              <label class="textColor mb-1" for="file">{{__('ui.foto')}}</label>
               <input type="file" wire:model.live="temporary_images" multiple class="form-control shadow @error('temporary_images.*') is_invalid @enderror" placeholder="Img/">
               <div class="textColor">
                 @error('temporary_images.*')
@@ -69,13 +69,12 @@
               </div>
             </div>
             @if (!empty($images))
-            <div class="row">
+            <div class="row text-center">
               <div class="col-12 textColor d-flex justify-content-center">
                 <p>Photo preview:</p>
               </div>
-              <div class="row">
                 @foreach($images as $key => $image)
-                <div class="col-4 d-flex flex-column my-auto">
+                <div class="col-12 col-lg-4 d-flex flex-column">
                   <div class="d-flex justify-content-center">
                   <div class="img-preview m-3" style="background-image: url({{ $image->temporaryUrl() }});"></div>
                   </div>
@@ -84,11 +83,10 @@
                   </div>
                 </div>
                 @endforeach
-              </div>
             </div>
             @endif
             <div class=" d-flex justify-content-center">
-              <button class="bottoneinserisci m-3" type="submit">Crea annuncio</button>
+              <button class="bottoneinserisci m-3" type="submit">{{__('ui.CreateArticle')}}</button>
             </div>
             <div class="textColor fs-2">
               @if (session('success'))

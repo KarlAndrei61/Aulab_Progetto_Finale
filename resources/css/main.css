@@ -268,5 +268,21 @@ color: #274c77;
 }
 
 .lasgros{
-    color: #274c77;
+    color: #274c77 !important;
+}
+
+.marginbenvenuto{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+
+}
+
+.bottonerevisore{
+    background-color: #274c77 !important;
+    color: #E7ECEF !important;
+    border: 1.25vh !important;
+}
+
+.suoidati{
+    color: #5F96BA !important;
 }
