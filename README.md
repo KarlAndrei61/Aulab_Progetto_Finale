@@ -1,15 +1,22 @@
 
-Requisiti 
+REQUISITI
 
 - Laravel
+Manuale per installare Laravel: https://laravel.com/docs/11.x/installation
 
 - PHP
+Manuale per installare PHP: https://www.php.net/manual/en/install.php
 
 - Database MySQL
+Link per installare TablePlus: https://tableplus.com/download
+Manuale per creare un database: https://tableplus.com/blog/2018/06/mysql-create-database.html
 
-- Imagick
+OPZIONALE PER LE IMMAGINI
 
-Passaggi
+- Imagick (opzionale per vedere le immagini)
+Installazione Imagick per Windows: https://imagemagick.org/script/download.php
+
+PASSAGGI
 
 1.Dupplica il .env
 
@@ -32,6 +39,5 @@ Passaggi
 10.php artisan queue:work
 
 11.Mettere il mailtrap copiato con il tasto copy e metterlo nel .env
-
 
 12.php artisan serve, prendere l'http uscito e metterlo nel browser

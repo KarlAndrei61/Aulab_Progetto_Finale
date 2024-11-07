@@ -26,7 +26,7 @@ return
         'mobili' => 'mobili',
         'accessori per la casa e giardinaggio' => 'accessori per la casa e giardinaggio',
         'CreateArticle' => 'Inserisci Annuncio',
-        'Category' => 'Categorie',
+        'Category' => 'Categoria',
         'moresell' => 'Più annunci fai più vendi',
         'revisionzone' => 'Zona revisione',
         'noarticle' => 'Non ci sono annunci',
@@ -40,7 +40,8 @@ return
         'articolidellacat' => 'Articolo della categoria ',
         'articleresults' => 'Risultati per la ricerca',
         'benvenuto' => 'Benvenuto revisore',
-        'sceglicat' => 'Scegli una categoria'
+        'sceglicat' => 'Scegli una categoria',
+    'makedifference' => 'Fai la differenza!'
 
 
 

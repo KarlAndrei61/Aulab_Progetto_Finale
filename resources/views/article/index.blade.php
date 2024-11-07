@@ -15,8 +15,8 @@
         @forelse($articles as $article)
         <x-card :article="$article" />
         @empty
-        <div class="col-12">
-                <div class="circle">
+        <div class="col-12 my-3">
+                <div class="circle m-5">
                     <h2 class="text-center fs-3 loremstyle">{{__('ui.noarticle')}}</h2>
 
                     <div class="d-flex justify-content-center mt-5">

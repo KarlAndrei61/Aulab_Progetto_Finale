@@ -25,7 +25,7 @@ return
         'mobili' => 'meubles',
         'accessori per la casa e giardinaggio' => 'accessoires pour la maison et jardinage',
         'CreateArticle' => 'Creer Article',
-        'Category' => 'Categories',
+        'Category' => 'Catégorie',
         'moresell' => 'Plus vous creez de produits, plus vous vendez',
         'revisionzone' => 'Zone de révision',
         'noarticle' => "il n'y a pas d'articles",
@@ -44,6 +44,8 @@ return
         'descrizione' => 'Description',
         'categoria' => 'Categorié',
         'foto' => 'Image',
-        'sceglicat' => 'Choisissez une catégorie'
+        'sceglicat' => 'Choisissez une catégorie',
+    'makedifference' => 'Faites une différence!'
+
 
     ];

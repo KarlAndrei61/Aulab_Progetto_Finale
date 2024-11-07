@@ -25,12 +25,12 @@ return
     'mobili' => 'furnitures',
     'accessori per la casa e giardinaggio' => 'house equipment and gardening',
     'CreateArticle' => 'Create Article',
-    'Category' => 'Categories',
+    'Category' => 'Category',
     'moresell' => 'The more articles you make the more you sell',
     'revisionzone' => 'Revision area',
     'noarticle' => "There's no article available",
     'makediff' => 'Make the difference!',
-    'esci' => 'Déconnecté',
+    'esci' => 'Log out',
     'annunci' => 'Articles',
     'cerca' => 'Search',
     'Italiano' =>'Italian',
@@ -44,7 +44,8 @@ return
     'descrizione' => 'Description',
     'categoria' => 'Category',
     'foto' => 'Picture',
-    'sceglicat' => 'Choose a category'
+    'sceglicat' => 'Choose a category',
+    'makedifference' => 'Make the difference!'
 
 
 

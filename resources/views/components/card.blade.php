@@ -14,7 +14,7 @@
             </div>
             <div>
                 <div>
-                    <h5 class="stilecat">
+                    <h5 class="lasgros">
                         {{__('ui.Category')}}
                     </h5>
                 </div>
