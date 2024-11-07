@@ -1,13 +1,13 @@
 
 REQUISITI
 
-- Laravel
+Laravel
 Manuale per installare Laravel: https://laravel.com/docs/11.x/installation
 
-- PHP
+PHP
 Manuale per installare PHP: https://www.php.net/manual/en/install.php
 
-- Database MySQL
+Database MySQL
 Link per installare TablePlus: https://tableplus.com/download
 Manuale per creare un database: https://tableplus.com/blog/2018/06/mysql-create-database.html
 
