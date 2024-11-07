@@ -18,26 +18,30 @@ Installazione Imagick per Windows: https://imagemagick.org/script/download.php
 
 PASSAGGI
 
-1.Dupplica il .env
+1. Tra i file dupplica il .env.example e lo rinominerai in .env
 
-2.Composer install
+2. Crea un database utilizzando TablePlus o un'altra piattaforma per compilare in .env il DB_DATABASE, DB_USERNAME e DB_PASSWORD
 
-3.Collega il nome del database in .env
+3. Crea un nuovo terminale e scrivi seguenti comandi:
 
-4.php artisan migrate
+    composer install
 
-5.php artisan key:generate
+    php artisan migrate
 
-6.php artisan db:seed
+    php artisan key:generate
 
-7.npm install
+    php artisan db:seed
 
-8. npm run dev
+    npm install
 
-9.php artisan storage:link
+    php artisan storage:link
 
-10.php artisan queue:work
+4. Crea un nuovo terminale e scrivi il seguente comando: npm run dev
 
-11.Mettere il mailtrap copiato con il tasto copy e metterlo nel .env
+5. Crea un nuovo terminale e scrivi il seguente comando: php artisan queue:work
 
-12.php artisan serve, prendere l'http uscito e metterlo nel browser
+6. Mettere il mailtrap copiato con il tasto copy e metterlo nel .env
+
+7. Crea un nuovo terminale e scrivi: php artisan serve
+
+8. Prendi l'http uscito dal php artisan serve e mettilo nel browser
